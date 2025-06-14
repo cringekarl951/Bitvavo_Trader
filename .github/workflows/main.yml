@@ -2,7 +2,7 @@ name: Bitvavo Portfolio Telegram Bot
 
 on:
   schedule:
-    - cron: '* * * * *' # Run every minute
+    - cron: '*/5 * * * *' # Run every minute
   workflow_dispatch: # Allow manual triggering
 
 jobs:
