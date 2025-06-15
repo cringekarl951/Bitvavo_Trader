@@ -32,7 +32,7 @@ jobs:
           BINANCE_API_SECRET: ${{ secrets.BINANCE_API_SECRET }}
           GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
           GOOGLE_SPREADSHEET_ID: ${{ secrets.GOOGLE_SPREADSHEET_ID }}
-        run: python volatility_analysis.py
+        run: python evaluate_volatility.py
 
       - name: Upload plots
         uses: actions/upload-artifact@v4
